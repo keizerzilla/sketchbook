@@ -15,7 +15,7 @@ Card[] checks;
 boolean running;
 
 void setup() {
-  size(400, 600);
+  size(380, 600);
   
   cardBack = loadImage("card_back.png");
   
