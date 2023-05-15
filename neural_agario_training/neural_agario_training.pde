@@ -56,8 +56,8 @@ void keyReleased() {
 
 void debug() {
     fill(255);
-    textSize(32);
-    text("SCORE: " + blob.score, 20, 40);
+    textSize(24);
+    text("SCORE: " + blob.score, 20, 30);
 }
 
 void draw() {

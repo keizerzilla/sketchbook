@@ -63,19 +63,7 @@ class Blob {
     }
     
     boolean sees(Coin coin) {
-        float dist = dist(position.x, position.y, coin.position.x, coin.position.y);
-        
-        if (dist > SENSOR_SIZE) {
-            return false;
-        }
-        
-        PVector cp = coin.position.copy();
-        cp.normalize();
-        
-        float c1 = (leftSensor.x * cp.y) - (leftSensor.y * cp.x);
-        float c2 = (cp.x * rightSensor.y) - (cp.y * rightSensor.x);
-        
-        return dist < SENSOR_SIZE && c1 > 0 && c2 >= 0;
+        return true;
     }
     
     void update() {
